@@ -157,11 +157,8 @@ export class ProfileController {
           lastName: lastName ? lastName : findProfile?.lastName,
           phone: phone ? phone : findProfile?.lastName,
           companyName: companyName ? companyName : findProfile?.companyName,
-          // paymentOptId: paymentType
-          //   ? findPaymentType?.id
-          //   : findProfile?.paymentOptId,
           profilePicture: req.file
-            ? `/assets/profile/${req.file.filename}`
+            ? req.body.imageUrl
             : findProfile?.profilePicture,
         },
       });
