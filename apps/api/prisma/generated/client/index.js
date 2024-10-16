@@ -13,7 +13,6 @@ const {
   empty,
   join,
   raw,
-  skip,
   Decimal,
   Debug,
   objectEnumValues,
@@ -32,12 +31,12 @@ exports.Prisma = Prisma
 exports.$Enums = {}
 
 /**
- * Prisma Client JS version: 5.20.0
- * Query Engine version: 06fc58a368dc7be9fbbbe894adf8d445d208c284
+ * Prisma Client JS version: 5.14.0
+ * Query Engine version: e9771e62de70f79a5e1c604a2d7c8e2a0a874b48
  */
 Prisma.prismaVersion = {
-  client: "5.20.0",
-  engine: "06fc58a368dc7be9fbbbe894adf8d445d208c284"
+  client: "5.14.0",
+  engine: "e9771e62de70f79a5e1c604a2d7c8e2a0a874b48"
 }
 
 Prisma.PrismaClientKnownRequestError = PrismaClientKnownRequestError;
@@ -75,8 +74,6 @@ Prisma.NullTypes = {
   JsonNull: objectEnumValues.classes.JsonNull,
   AnyNull: objectEnumValues.classes.AnyNull
 }
-
-
 
 
   const path = require('path')
@@ -258,7 +255,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\jcwd0312sby\\Finpro_Backup\\jcwd031201-develop\\apps\\api\\prisma\\generated\\client",
+      "value": "/Users/abdialghi/Documents/Purwadhika/jcwd031201-alfred/apps/api/prisma/generated/client",
       "fromEnvVar": null
     },
     "config": {
@@ -267,12 +264,11 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "windows",
+        "value": "darwin-arm64",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "D:\\jcwd0312sby\\Finpro_Backup\\jcwd031201-develop\\apps\\api\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -280,8 +276,8 @@ const config = {
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
-  "clientVersion": "5.20.0",
-  "engineVersion": "06fc58a368dc7be9fbbbe894adf8d445d208c284",
+  "clientVersion": "5.14.0",
+  "engineVersion": "e9771e62de70f79a5e1c604a2d7c8e2a0a874b48",
   "datasourceNames": [
     "db"
   ],
@@ -334,8 +330,8 @@ exports.PrismaClient = PrismaClient
 Object.assign(exports, Prisma)
 
 // file annotations for bundling tools to include these files
-path.join(__dirname, "query_engine-windows.dll.node");
-path.join(process.cwd(), "prisma/generated/client/query_engine-windows.dll.node")
+path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
+path.join(process.cwd(), "prisma/generated/client/libquery_engine-darwin-arm64.dylib.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
 path.join(process.cwd(), "prisma/generated/client/schema.prisma")
