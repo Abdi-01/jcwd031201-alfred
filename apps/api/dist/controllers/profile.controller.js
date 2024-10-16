@@ -147,11 +147,8 @@ class ProfileController {
                         lastName: lastName ? lastName : findProfile === null || findProfile === void 0 ? void 0 : findProfile.lastName,
                         phone: phone ? phone : findProfile === null || findProfile === void 0 ? void 0 : findProfile.lastName,
                         companyName: companyName ? companyName : findProfile === null || findProfile === void 0 ? void 0 : findProfile.companyName,
-                        // paymentOptId: paymentType
-                        //   ? findPaymentType?.id
-                        //   : findProfile?.paymentOptId,
                         profilePicture: req.file
-                            ? `/assets/profile/${req.file.filename}`
+                            ? req.body.imageUrl
                             : findProfile === null || findProfile === void 0 ? void 0 : findProfile.profilePicture,
                     },
                 });
